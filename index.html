@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Continue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .box {
+      max-width: 360px;
+      padding: 30px;
+      background: #020617;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.85;
+      margin-bottom: 25px;
+    }
+
+    a.button {
+      display: block;
+      text-decoration: none;
+      background: #22c55e;
+      color: #000;
+      padding: 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .note {
+      font-size: 12px;
+      opacity: 0.6;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>⚠️ Continue to Access</h1>
+    <p>This page works best in your browser.<br>
+       Tap the button below to continue.</p>
+
+    <!-- ANDROID INTENT LINK -->
+    <a class="button"
+       href="intent://go.mysite.com#Intent;scheme=https;package=com.android.chrome;end;">
+       🔓 Continue in Chrome
+    </a>
+
+    <div class="note">
+      Android users only
+    </div>
+  </div>
+
+</body>
+</html>
